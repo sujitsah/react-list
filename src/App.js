@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Intro from './components/intro';
+import Series from './containers/series';
+import 'whatwg-fetch';
+// import Serieslist from './containers/serieslist'
 
-function App() {
+// const Intro = (props)=>(
+//   <p className="App-intro">first functional component</p>
+// )
+
+class App extends Component {
+  
+  render(){
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -18,9 +28,13 @@ function App() {
         >
           Learn React
         </a>
+        <Intro className="lol"  />
+        
+        <Series />
       </header>
     </div>
   );
+}
 }
 
 export default App;
