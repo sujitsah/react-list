@@ -13,7 +13,7 @@ class Series extends Component{
         .then(response => response.json())
         .then(json => this.setState({series : json}));
         console.log(e)
-        console.log()
+       
       }
      render(){
          return(
